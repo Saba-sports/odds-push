@@ -24,5 +24,5 @@ This repository contains client implementation examples in the following languag
 - [**OddsPushClientRust/**](https://github.com/Saba-sports/odds-push/tree/master/OddsPushClientRust): Rust high-performance implementation.
 
 ## Technical Documentation
-- [**English Integration Specification**](https://github.com/Saba-sports/odds-push/wiki/OddsPush-Document-EN)
-- [**中文整合規格說明**](https://github.com/Saba-sports/odds-push/wiki/OddsPush-Document)
+- [**English Integration Specification**](https://github.com/Saba-sports/odds-push/wiki/English-Document)
+- [**中文整合規格說明**](https://github.com/Saba-sports/odds-push/wiki/%E7%B0%A1%E4%BD%93%E4%B8%AD%E6%96%87%E6%96%87%E6%AA%94)
