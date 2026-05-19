@@ -1,0 +1,34 @@
+# .NET 忽略檔案
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.sln.doccache
+sportsbook.db
+sportsbook.db-shm
+sportsbook.db-wal
+
+# Visual Studio / Rider 相關
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.doccache
+*.pfx
+*.publishsettings
+
+# 作業系統相關
+.DS_Store
+Thumbs.db
+
+# 應用程式設定
+appsettings.Development.json
+# 如果您不想將包含帳密的 appsettings.json 推上 Git，請取消下行註解
+# appsettings.json
+
+stderr
+stdout
+
+target/
+node_modules/

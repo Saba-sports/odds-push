@@ -1,0 +1,9 @@
+{
+  "name": "oddspush-client-nodejs",
+  "version": "1.0.0",
+  "description": "NodeJS demo for consuming RabbitMQ messages",
+  "main": "index.js",
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  }
+}

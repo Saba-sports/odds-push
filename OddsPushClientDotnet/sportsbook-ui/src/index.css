@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-brand: #ff6b00;
+  --color-brand-hover: #e65a00;
+
+  --color-surface: #ffffff;
+  --color-surface-hover: #f8fafc;
+  --color-surface-active: #f1f5f9;
+
+  --color-dark-surface: #121419;
+  --color-dark-surface-muted: #1a1d23;
+  --color-dark-sidebar: #0f1115;
+  --color-dark-border: #2d313a;
+
+  --radius-xl: 1rem;
+  --shadow-lux: 0 10px 25px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+:root {
+  background-color: #f1f3f7;
+  color: #1e293b;
+}
+
+.dark {
+  background-color: #0b0d11;
+  color: #f8fafc;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Sportsbook Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+/* Layout transitions */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+/* Odds Button Effects */
+.odds-button {
+  @apply relative overflow-hidden transition-all duration-150 active:scale-95;
+}
+
+.odds-value-up {
+  @apply text-green-500 animate-pulse;
+}
+
+.odds-value-down {
+  @apply text-red-500 animate-pulse;
+}
